@@ -16,5 +16,27 @@ namespace StudentScores
         {
             InitializeComponent();
         }
+        List<int> scorelist = new List<int>();
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            if (IsValidScore())
+            {
+                int score = Convert.ToInt32(txtScore.Text);
+                scorelist.Add(score);
+                DisplayScores();
+                txtScore.Focus();
+            }
+        }
+
+        private void DisplayScores()
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (int score in scorelist)
+            {
+                sb.Append($"{score} ");
+            }
+            lblScores.Text = sb.ToString();
+        }
     }
 }

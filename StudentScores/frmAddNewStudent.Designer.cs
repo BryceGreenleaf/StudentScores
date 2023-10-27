@@ -106,6 +106,7 @@
             this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "&Add Score";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnClear
             // 
