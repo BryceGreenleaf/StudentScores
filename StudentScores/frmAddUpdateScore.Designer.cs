@@ -62,6 +62,7 @@
             this.btnCancel.TabIndex = 2;
             this.btnCancel.Text = "&Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click_1);
             // 
             // btnAddUpdate
             // 
@@ -73,6 +74,7 @@
             this.btnAddUpdate.TabIndex = 3;
             this.btnAddUpdate.Text = "&Add";
             this.btnAddUpdate.UseVisualStyleBackColor = true;
+            this.btnAddUpdate.Click += new System.EventHandler(this.btnAddUpdate_Click_1);
             // 
             // frmAddUpdateScore
             // 
