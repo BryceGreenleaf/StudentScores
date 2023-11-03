@@ -123,6 +123,7 @@
             // 
             // btnCancel
             // 
+            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.Location = new System.Drawing.Point(253, 181);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnCancel.Name = "btnCancel";
@@ -162,6 +163,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmUpdateStudent";
             this.Text = "Update Student Scores";
+            this.Load += new System.EventHandler(this.frmUpdateStudent_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
