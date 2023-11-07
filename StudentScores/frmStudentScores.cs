@@ -109,7 +109,7 @@ namespace StudentScores
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if (studentScores.Count == 0)
+            if (studentScores.Count > 0)
             {
                 int selectedIndex = lstStudents.SelectedIndex;
                 string student = studentScores[selectedIndex].ToString();
