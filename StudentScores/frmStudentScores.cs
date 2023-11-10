@@ -58,8 +58,6 @@ namespace StudentScores
         {
             if (lstStudents.SelectedIndex != -1)
             { 
-                string student = studentScores[lstStudents.SelectedIndex].ToString();
-                string [] scores = student.Split('|');
 
                 int total = 0;
                 for (int i = 1; i < scores.Length; i++)
