@@ -80,6 +80,7 @@
             this.lstStudentScores.Name = "lstStudentScores";
             this.lstStudentScores.Size = new System.Drawing.Size(174, 124);
             this.lstStudentScores.TabIndex = 3;
+            this.lstStudentScores.SelectedIndexChanged += new System.EventHandler(this.lstStudentScores_SelectedIndexChanged);
             // 
             // btnAdd
             // 

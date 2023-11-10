@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace StudentScores
 {
@@ -38,14 +39,17 @@ namespace StudentScores
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            if (IsValidName())
+            if (IsValidName() && IsValidScore())
             {
-                string studentScores = txtScore.Text;
+                string studentName = textBox1.Text; // Retrieve the name from the TextBox
+                string studentScores = $"{studentName} |";
+
                 foreach (int score in scoresList)
                 {
-                    studentScores += $"|{score}";
+                    studentScores += $"{score} |";
                 }
-                Tag = studentScores;
+
+                Tag = studentScores.TrimEnd('|'); // Remove the trailing '|' character
                 DialogResult = DialogResult.OK;
             }
         }
@@ -127,6 +131,9 @@ namespace StudentScores
             return errorMsg;
         }
 
-   
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

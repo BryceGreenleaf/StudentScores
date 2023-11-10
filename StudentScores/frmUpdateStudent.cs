@@ -123,5 +123,10 @@ namespace StudentScores
         {
 
         }
+
+        private void lstStudentScores_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
