@@ -44,13 +44,7 @@ namespace StudentScores
                 string studentName = textBox1.Text; // Retrieve the name from the TextBox
                 string studentScores = $"{studentName} |";
 
-                foreach (int score in scoresList)
-                {
-                    studentScores += $"{score} |";
-                }
 
-                Tag = studentScores.TrimEnd('|'); // Remove the trailing '|' character
-                DialogResult = DialogResult.OK;
             }
         }
 
