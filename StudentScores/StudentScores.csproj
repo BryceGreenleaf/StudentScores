@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Validator.cs" />
     <Compile Include="frmAddNewStudent.cs">
       <SubType>Form</SubType>
     </Compile>
